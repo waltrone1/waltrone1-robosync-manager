@@ -1,79 +1,113 @@
 # WALTRONE RoboSync Manager
 
-A simple and practical Robocopy-based sync and backup tool for Windows admins.
+Advanced Robocopy GUI for Windows with sync, compare and HTML reporting features.
 
-> Built to make recurring file copy, backup and sync tasks easier, clearer and more manageable.
+> Built to simplify recurring file synchronization, backup and comparison workflows for Windows admins and power users.
 
 ---
 
 ## Why this tool exists
 
-RoboSync Manager was created because Robocopy is powerful, but not always comfortable to use in daily admin work.
+Robocopy is extremely powerful, but many daily tasks still require complex command-line usage.
 
-This tool provides a more user-friendly way to create, manage and monitor Robocopy-based jobs.
+WALTRONE RoboSync Manager was created to provide a cleaner and more user-friendly way to:
+
+- synchronize folders
+- compare directory structures
+- generate HTML reports
+- preview Robocopy commands
+- monitor output more comfortably
+
+The focus is simplicity, transparency and practical day-to-day usability.
 
 ---
 
 ## Features
 
-- Create and manage Robocopy jobs
-- Start sync and backup tasks from a simple interface
-- View status and logs more easily
-- Useful for Windows admins, power users and small IT environments
-- Local-first approach
+- Modern Robocopy GUI
+- Synchronization mode
+- Compare mode
+- Live output console
+- HTML report generation
+- SHA256 compare option
+- Command preview
+- Mirror mode support
+- Simple Windows-focused workflow
+- Portable usage possible
 
 ---
 
 ## Screenshots
 
-> Screenshots will be added soon.
+### Main Window
 
-<!-- Example:
-![Main window](screenshots/main-window.png)
--->
+![Main Window](screenshots/main-window.png)
+
+---
+
+### Synchronization Mode
+
+![Synchronization Mode](screenshots/sync-mode.png)
+
+---
+
+### Compare Mode
+
+![Compare Mode](screenshots/compare-mode.png)
+
+---
+
+### Live Output
+
+![Live Output](screenshots/live-output.png)
+
+---
+
+### Compare HTML Report
+
+![Compare Report](screenshots/compare-report.png)
+
+---
+
+### Sync HTML Report
+
+![Sync Report](screenshots/sync-report.png)
 
 ---
 
 ## Installation
 
-Download the latest release from the GitHub Releases page.
+Download the latest release from the GitHub Releases section.
 
 1. Download the ZIP file
-2. Extract it
+2. Extract the archive
 3. Start the application
+
+No complicated setup required.
 
 ---
 
 ## Usage
 
-1. Create or select a copy/sync job
-2. Configure source and destination
-3. Start the job
-4. Check the output/logs
+1. Select source and target folders
+2. Choose synchronization or compare mode
+3. Configure optional settings
+4. Start the task
+5. Review output and reports
 
 ---
 
-## License
+## Notes
 
-This project is planned as source-available software.
-
-Free personal use is intended.  
-Commercial redistribution, resale or rebranding is not allowed without permission.
-
-Final license text will be added soon.
+- Prefer mapped drives for network shares
+- SHA256 compare is slower but more accurate
+- HTML reports can be archived or shared
 
 ---
 
-## Support
+## Project Structure
 
-If this tool helps you, voluntary support is appreciated.
-
-Donation/support links will be added later.
-
----
-
-## Author
-
-Created by **WALTRONE**  
-GitHub: [@waltrone1](https://github.com/waltrone1)
-Website: [waltrone1.de](https://waltrone1.de)
+```text
+docs/           Documentation
+screenshots/    UI screenshots
+src/            PowerShell source code
