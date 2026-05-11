@@ -1,4 +1,4 @@
-# WALTRONE RoboSync Manager
+# waltrone1-RoboSync-Manager
 
 Advanced Robocopy GUI for Windows with sync, compare and HTML reporting features.
 
