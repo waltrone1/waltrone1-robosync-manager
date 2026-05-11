@@ -111,3 +111,4 @@ No complicated setup required.
 docs/           Documentation
 screenshots/    UI screenshots
 src/            PowerShell source code
+```
