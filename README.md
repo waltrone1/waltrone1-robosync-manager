@@ -1,39 +1,94 @@
 # waltrone1 RoboSync Manager
 
-Advanced Robocopy GUI for Windows with sync, compare and HTML reporting features.
+**waltrone1 RoboSync Manager** is a free Windows file synchronization and directory comparison tool by **WALTRONE**.
 
-> Built to simplify recurring file synchronization, backup and comparison workflows for Windows admins and power users.
+It provides a cleaner and more user-friendly interface for common Robocopy workflows, including folder synchronization, directory comparison, command preview, live output and HTML report generation.
 
----
-
-## Why this tool exists
-
-Robocopy is extremely powerful, but many daily tasks still require complex command-line usage.
-
-WALTRONE RoboSync Manager was created to provide a cleaner and more user-friendly way to:
-
-- synchronize folders
-- compare directory structures
-- generate HTML reports
-- preview Robocopy commands
-- monitor output more comfortably
-
-The focus is simplicity, transparency and practical day-to-day usability.
+The tool is designed for Windows admins, power users and anyone who wants to simplify recurring file synchronization, backup and comparison tasks without manually writing complex Robocopy commands.
 
 ---
 
 ## Features
 
-- Modern Robocopy GUI
-- Synchronization mode
-- Compare mode
-- Live output console
+- Robocopy-based folder synchronization
+- Directory comparison mode
+- Live Robocopy output
+- Command preview before execution
 - HTML report generation
 - SHA256 compare option
-- Command preview
 - Mirror mode support
+- Move mode support
+- UNC path support
+- Task Scheduler support
+- Headless task mode for automated runs
 - Simple Windows-focused workflow
 - Portable usage possible
+- German / English language support
+
+---
+
+## Use Cases
+
+This tool can be useful for:
+
+- Synchronizing folders between local paths
+- Synchronizing data to external drives
+- Synchronizing folders to network shares
+- Comparing source and target directories before or after sync jobs
+- Reviewing file differences with optional SHA256 verification
+- Creating HTML reports for documentation or handover
+- Preparing recurring internal sync jobs
+- Running controlled Robocopy workflows with preview and review steps
+
+---
+
+## Project Status
+
+This project is currently available as a public release.
+
+The repository provides source files, documentation, screenshots and release information for transparency and community access.
+
+Current version:
+
+```text
+1.0.0.0
+```
+
+---
+
+## Download
+
+You can download the latest release from the GitHub Releases section.
+
+A Gumroad download page may also be available for users who prefer a simple download option or want to support the project voluntarily.
+
+---
+
+## Repository Structure
+
+```text
+waltrone1-robosync-manager/
+│
+├── README.md
+├── CHANGELOG.md
+├── LICENSE
+├── .gitignore
+│
+├── docs/
+│   └── usage documentation
+│
+├── screenshots/
+│   └── application screenshots
+│
+└── src/
+    └── application source files
+```
+
+The `src/` folder contains the application source files.
+
+The `screenshots/` folder contains the images used in this README.
+
+Generated files such as `.exe`, `.zip`, `build/`, `dist/` or release folders should not be committed directly to the repository.
 
 ---
 
@@ -43,31 +98,21 @@ The focus is simplicity, transparency and practical day-to-day usability.
 
 ![Main Window](screenshots/main-window.png)
 
----
-
 ### Synchronization Mode
 
 ![Synchronization Mode](screenshots/sync-mode.png)
-
----
 
 ### Compare Mode
 
 ![Compare Mode](screenshots/compare-mode.png)
 
----
-
 ### Live Output
 
 ![Live Output](screenshots/live-output.png)
 
----
-
 ### Compare HTML Report
 
 ![Compare Report](screenshots/compare-report.png)
-
----
 
 ### Sync HTML Report
 
@@ -75,40 +120,99 @@ The focus is simplicity, transparency and practical day-to-day usability.
 
 ---
 
-## Installation
+## Basic Usage
 
-Download the latest release from the GitHub Releases section.
-
-1. Download the ZIP file
-2. Extract the archive
-3. Start the application
-
-No complicated setup required.
-
----
-
-## Usage
-
-1. Select source and target folders
-2. Choose synchronization or compare mode
-3. Configure optional settings
-4. Start the task
-5. Review output and reports
+1. Download the latest release.
+2. Extract the ZIP file.
+3. Start the application.
+4. Select source and target folders.
+5. Choose synchronization or compare mode.
+6. Review the generated Robocopy command preview.
+7. Start the task.
+8. Review the live output and generated HTML reports.
 
 ---
 
-## Notes
+## Build / Source Notes
 
-- Prefer mapped drives for network shares
-- SHA256 compare is slower but more accurate
-- HTML reports can be archived or shared
-
----
-
-## Project Structure
+The source files are located in:
 
 ```text
-docs/           Documentation
-screenshots/    UI screenshots
-src/            PowerShell source code
+src/
 ```
+
+Generated build output such as `.exe`, `.zip`, `build/`, `dist/` or release folders should not be committed directly to the repository.
+
+Final release packages should be published through GitHub Releases.
+
+---
+
+## Safety Notes
+
+Robocopy is powerful and some modes can modify or delete files.
+
+Please review all settings carefully before starting a task.
+
+Important notes:
+
+- Prefer mapped drives for network shares if authentication is required.
+- SHA256 comparison is slower but more accurate.
+- Mirror mode can delete files in the destination.
+- Move mode can remove files from the source after transfer.
+- Always test carefully before productive use.
+- Use only in authorized environments.
+
+---
+
+## License
+
+This project is released under the **WALTRONE Community License**.
+
+You may use this tool for free.
+
+However, the following is not allowed without written permission:
+
+- Commercial resale
+- Rebranding
+- Selling modified versions
+- Commercial integration into paid products or services
+- Republishing the project under another name
+- Removing WALTRONE branding or author information
+
+For details, see the `LICENSE` file.
+
+---
+
+## About WALTRONE
+
+**WALTRONE** is a GitHub and community project focused on small, useful tools for Windows, automation, productivity and system management.
+
+GitHub handle / domain identity:
+
+```text
+waltrone1
+```
+
+Project brand:
+
+```text
+WALTRONE
+```
+
+---
+
+## Support
+
+This tool is free to use.
+
+If you find it useful, you may support the project voluntarily through the official WALTRONE download/support page.
+
+---
+
+## Disclaimer
+
+This tool is provided as-is, without warranty of any kind.
+
+Use it at your own risk.
+
+The author is not responsible for data loss, system issues, incorrect synchronization results, deleted files or damages caused by the use of this software.
