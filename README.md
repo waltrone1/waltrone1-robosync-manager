@@ -108,7 +108,13 @@ waltrone1-robosync-manager/
 │   └── usage documentation
 │
 ├── screenshots/
-│   └── application screenshots
+│   ├── main-window.png
+│   ├── sync-mode.png
+│   ├── compare-mode.png
+│   ├── live-output.png
+│   ├── compare-report.png
+│   ├── sync-report.png
+│   └── .gitkeep
 │
 └── src/
     └── application source files
@@ -121,7 +127,6 @@ The `screenshots/` folder contains the images used in this README.
 Generated files such as `.exe`, `.zip`, `build/`, `dist/` or release folders should not be committed directly to the repository.
 
 ---
-
 
 ## Basic Usage
 
