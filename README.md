@@ -8,6 +8,36 @@ The tool is designed for Windows admins, power users and anyone who wants to sim
 
 ---
 
+## Screenshots
+
+The screenshots show the main application window, synchronization mode, compare mode, live Robocopy output and generated HTML reports.
+
+### Main Window
+
+![Main Window](screenshots/main-window.png)
+
+### Synchronization Mode
+
+![Synchronization Mode](screenshots/sync-mode.png)
+
+### Compare Mode
+
+![Compare Mode](screenshots/compare-mode.png)
+
+### Live Output
+
+![Live Output](screenshots/live-output.png)
+
+### Compare HTML Report
+
+![Compare Report](screenshots/compare-report.png)
+
+### Sync HTML Report
+
+![Sync Report](screenshots/sync-report.png)
+
+---
+
 ## Features
 
 - Robocopy-based folder synchronization
@@ -92,33 +122,6 @@ Generated files such as `.exe`, `.zip`, `build/`, `dist/` or release folders sho
 
 ---
 
-## Screenshots
-
-### Main Window
-
-![Main Window](screenshots/main-window.png)
-
-### Synchronization Mode
-
-![Synchronization Mode](screenshots/sync-mode.png)
-
-### Compare Mode
-
-![Compare Mode](screenshots/compare-mode.png)
-
-### Live Output
-
-![Live Output](screenshots/live-output.png)
-
-### Compare HTML Report
-
-![Compare Report](screenshots/compare-report.png)
-
-### Sync HTML Report
-
-![Sync Report](screenshots/sync-report.png)
-
----
 
 ## Basic Usage
 
