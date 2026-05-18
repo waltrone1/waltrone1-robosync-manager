@@ -14,10 +14,6 @@ The screenshots show the main application window, synchronization mode, compare 
 
 ### Main Window
 
-![Main Window](screenshots/main-window.png)
-
-### Synchronization Mode
-
 ![Synchronization Mode](screenshots/sync-mode.png)
 
 ### Compare Mode
