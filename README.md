@@ -47,13 +47,46 @@ The screenshots show the main application window, synchronization mode, compare 
 - HTML report generation
 - SHA256 compare option
 - Mirror mode support
+- MIR safety threshold for mirror jobs
 - Move mode support
+- Multi-threaded copy support via `/MT`
+- Configurable `/MT` thread count
 - UNC path support
 - Task Scheduler support
 - Headless task mode for automated runs
+- Improved German and English help layout
 - Simple Windows-focused workflow
 - Portable usage possible
 - German / English language support
+
+---
+
+## New in Version 1.1.0.0
+
+Version **1.1.0.0** adds two important Robocopy workflow improvements:
+
+### Multi-threaded copy with `/MT`
+
+The `/MT` option allows Robocopy to copy multiple files in parallel.
+
+This can improve performance, especially when copying many small files. The thread count can be configured in the GUI and is shown in the final command preview before execution.
+
+Example:
+
+```text
+/MT:8
+/MT:16
+```
+
+### MIR safety threshold
+
+The MIR safety threshold is a protection layer for mirror jobs.
+
+Mirror mode can delete files in the destination if they no longer exist in the source. The safety threshold checks the planned changes before the actual mirror operation starts. If too many files would be affected, the user is warned and can stop the operation.
+
+This is intended to help reduce the risk of accidental mass deletions, wrong source selections or unwanted mirror operations after large unexpected changes.
+
+When MIRROR mode is enabled, the MIR safety threshold is automatically enabled by default.
 
 ---
 
@@ -69,6 +102,8 @@ This tool can be useful for:
 - Creating HTML reports for documentation or handover
 - Preparing recurring internal sync jobs
 - Running controlled Robocopy workflows with preview and review steps
+- Running larger copy jobs with configurable multi-threaded copy
+- Using mirror mode with an additional safety check before destructive operations
 
 ---
 
@@ -81,7 +116,7 @@ The repository provides source files, documentation, screenshots and release inf
 Current version:
 
 ```text
-1.0.0.0
+1.1.0.0
 ```
 
 ---
@@ -135,9 +170,10 @@ Generated files such as `.exe`, `.zip`, `build/`, `dist/` or release folders sho
 3. Start the application.
 4. Select source and target folders.
 5. Choose synchronization or compare mode.
-6. Review the generated Robocopy command preview.
-7. Start the task.
-8. Review the live output and generated HTML reports.
+6. Configure optional settings such as `/MT`, MIRROR, MOVE or SHA256 compare.
+7. Review the generated Robocopy command preview.
+8. Start the task.
+9. Review the live output and generated HTML reports.
 
 ---
 
@@ -165,8 +201,11 @@ Important notes:
 
 - Prefer mapped drives for network shares if authentication is required.
 - SHA256 comparison is slower but more accurate.
+- `/MT` copies multiple files in parallel and can increase load on disks, network shares or NAS systems.
 - Mirror mode can delete files in the destination.
 - Move mode can remove files from the source after transfer.
+- The MIR safety threshold is an additional protection layer, but it does not replace careful review.
+- Always review the command preview before execution.
 - Always test carefully before productive use.
 - Use only in authorized environments.
 
