@@ -16,7 +16,7 @@ Functions/logic: based on your existing script (robocopy async queue, UNC auth, 
 # ----------------------------
 # App Identity (Single Source of Truth)
 # ----------------------------
-$script:AppName    = "waltrone1 Admin Activity Inspector"
+$script:AppName    = "waltrone1 RoboSync Manager"
 $script:AppVersion = [version]"1.1.0.0"
 $script:BuildDate  = (Get-Date).ToString("yyyy-MM-dd")
 
