@@ -1,4 +1,4 @@
-# waltrone1 RoboSync Manager
+# WALTRONE RoboSync Manager
 
 **waltrone1 RoboSync Manager** is a free Windows file synchronization and directory comparison tool by **WALTRONE**.
 
